@@ -14,76 +14,117 @@ a{
 }
 
 
-/* Mobile Navigation */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (max-width: 600px) {
-    .logo{
-        margin-top:6px;
-        text-align: center;
-    }
-    .top-nav{
+    /* Mobile Navigation */
+    [class*="col-"] {
         width: 100%;
-        height: 40px;
-        background-color: #fff;
     }
-    .bars{
-        height:40px;
-        width: 40px;
-        cursor: pointer;
-        padding:12px;
-        background-color: #ffffff;
-        border-radius: 5px;
+    @media only screen and (max-width: 576px) {
+
+        .top-nav{
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            z-index: 15;
+            }
+
+        .logo{
+            margin-top:26px;
+            margin-left:26px;
+        }
+
+        .bars{
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .nav-container{
+            width: 0px;
+            height:0;
+            overflow: hidden;
+            float: right;
+            background-color: #fff;            
+            margin-top: -69px;
+            border-radius: 10px;
+            z-index: 20;
+        }
+        
+        #x{
+            right:20px;
+            top:20px;
+        }
+        
+        #certi{
+            width: 100%;
+            background-color: #99cc33;
+            color:#fff;
+            font-size:18px;
+            font-weight: 400;
+            cursor: pointer;
+            padding-top:16px;
+            padding-bottom:28px;
+            margin-top:30px;
+        }
+
+
+        header nav ul{
+            display: block;
+            overflow: hidden;
+            background: #fff;
+            height:0;
+        }
+        
+        header nav ul li{
+            float:none;
+            text-align: left;
+            width:100%;
+        }
+
+        header nav ul li a{
+            color: #738678;
+            font-size:16px;
+            padding:10px 40px;
+            display: block;
+            margin:0;
+        }
+
+        header nav ul li a:hover{
+            color: #99cc33;
+        }
+        
+        header nav ul li a:active{
+            color: #99cc33;
+        }
+
+        .col-3{
+            display: none;
+        }
+        .col-sm-1{
+            width:8.33%;;
+        }
+        .col-sm-2{
+            width:16.66%;;
+        }
+        .col-sm-10{
+            width:83.33%;
+        }
+        .col-sm-11{
+            width:91.66%;
+        }
+
     }
 
-    header nav ul{
-        display: block;
-        overflow: hidden;
-        background: #fff;
-        height:0;
-    }
-    
-    header nav ul.open{
-        height:auto;
-    }
-
-    header nav ul li{
-        float:none;
-        text-align: left;
-        width:100%;
-        margin:0;
-
-    }
-
-    header nav ul li a{
-        color: #ccc;
-        padding:10px;
-        border-bottom: 0px solid #ccc;
-        display: block;
-        margin:0;
-    }
-
-    .col-3{
-        display: none;
-    }
-    .col-sm-1{
-        width:8.33%;;
-    }
-    .col-sm-10{
-        width:91.66%;
-    }
-
-}
-
-/* Display nav small devices */
- 
+/* Lettering */
+h3{
+    font-size:20px;
+    color:#99cc33;
+} 
 
 
 /* Helpers */
 .text-center{
     text-align: center;
 }
+
 .inline{
 
     justify-content: right;
@@ -100,16 +141,43 @@ a{
     position: relative;
 }
 .shadow {
-    -webkit-box-shadow: 3px 8px 15px 3px rgba(242,242,242,0.3);
-    -moz-box-shadow:    3px 8px 15px 3px rgba(242,242,242,0.3);
-    box-shadow:         3px 8px 15px 3px rgba(242,242,242,0.3);
+    -webkit-box-shadow: 3px 8px 10px 4px rgba(244,244,244,0.3);
+    -moz-box-shadow:    3px 8px 10px 4px rgba(244,244,244,0.3);
+    box-shadow:         3px 8px 10px 4px rgba(244,244,244,0.3);
 }
-.row{
-    display: flex;
-}
-.col-3 {
-    width: 25%;
-}
-.col-6 {
-    width: 50%;
-}
+
+    /* Flex */
+    .row{
+        display: flex;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+
+    /* Paddings */
+    .p-10{
+        padding:10px;
+    }
+    .pl-40{
+        padding-left:40px;
+    }
+    .pt-40{
+        padding-top:40px;
+    }
+    .pb-40{
+        padding-bottom:40px;
+    }
+    .pt-20{
+        padding-top:20px;
+    }
+    .pb-20{
+        padding-bottom:20px;
+    }
+
+    /* Margins */
+    .mt-20{
+        margin-top:20px;
+    }
