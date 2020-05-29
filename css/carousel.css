@@ -1,3 +1,7 @@
+:root{
+  --carousel-height:445px;
+}
+
 .back-carousel{
     height: calc(var(--carousel-height)*1.5);
     background-color: var(--primary-green);
@@ -9,11 +13,6 @@
 }
 .content{
     padding-right: 100px;
-}
-
-
-:root{
-    --carousel-height:445px;
 }
 
 .rounded-chart-left{
@@ -40,7 +39,7 @@ height: var(--carousel-height);
 
 /* Title */
 .title-container{
-    padding: 100px 40px;
+    padding: 80px 0 0 70px;
 }
 
 /* Hide the images by default */
@@ -99,21 +98,28 @@ height: var(--carousel-height);
 
 
 /* The dots/bullets/indicators */
+.dot-container{
+    margin-top: 30px;
+    margin-left: -10px;
+}
 .dot {
   cursor: pointer;
-  height: 55px;
-  width: 55px;
-  margin: 0 3px;
+  height: 60px;
+  width: 60px;
+  margin: 0 2px;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.8s ease;
-}
-.icon{
-    
+  transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color:var(--primary-green);
+  background-color:#355e3b;
+  color:#fff;
+}
+
+.color-white{
+  color:#fff;
 }
 
 /* Fading animation */

@@ -1,7 +1,4 @@
 
-
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -17,6 +14,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
+  var icons = ['flaticon-prevention','flaticon-documents','flaticon-affection','flaticon-hand-washing', 'flaticon-footprints','flaticon-handwash','flaticon-mask'];
+  var iconselect = document.getElementsByClassName(icons[n]);
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
@@ -24,10 +23,11 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+console.log(iconselect)

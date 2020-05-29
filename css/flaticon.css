@@ -13,6 +13,7 @@
        url("./Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
+  
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -24,10 +25,14 @@
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-  font-family: Flaticon;
-        font-size: 20px;
+font-family: Flaticon;
+font-size: 30px;
 font-style: normal;
-margin-left: 20px;
+margin: 0px;
+position:absolute;
+top:15px;
+right:15px;
+color: var(--primary-green);
 }
 
 .flaticon-documents:before { content: "\f100"; }
@@ -35,5 +40,5 @@ margin-left: 20px;
 .flaticon-hand-washing:before { content: "\f102"; }
 .flaticon-footprints:before { content: "\f103"; }
 .flaticon-handwash:before { content: "\f104"; }
-.flaticon-mask:before { content: "\f105"; }
+.flaticon-medical-mask:before { content: "\f105"; }
 .flaticon-prevention:before { content: "\f106"; }
