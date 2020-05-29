@@ -9,6 +9,7 @@
 
 .carousel{
     padding-left: 100px;
+    padding-top: 120px;
     z-index: 10;
 }
 .content{
@@ -100,7 +101,7 @@ height: var(--carousel-height);
 /* The dots/bullets/indicators */
 .dot-container{
     margin-top: 30px;
-    margin-left: -10px;
+    margin-left: -30px;
 }
 .dot {
   cursor: pointer;
@@ -115,7 +116,7 @@ height: var(--carousel-height);
 
 .active, .dot:hover {
   background-color:#355e3b;
-  color:#fff;
+  color:var(--primary-green);
 }
 
 .color-white{
@@ -139,5 +140,6 @@ height: var(--carousel-height);
   from {opacity: 0.1}
   to {opacity: 1}
 }
+
 
 

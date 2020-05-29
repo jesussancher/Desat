@@ -1,6 +1,7 @@
 
-var slideIndex = 1;
+var slideIndex = [1];
 showSlides(slideIndex);
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -14,10 +15,9 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var icons = ['flaticon-prevention','flaticon-documents','flaticon-affection','flaticon-hand-washing', 'flaticon-footprints','flaticon-handwash','flaticon-mask'];
-  var iconselect = document.getElementsByClassName(icons[n]);
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
