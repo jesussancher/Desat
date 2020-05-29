@@ -8,12 +8,12 @@
 }
 
 .carousel{
-    padding-left: 100px;
+    padding-left: 70px;
     padding-top: 120px;
     z-index: 10;
 }
 .content{
-    padding-right: 100px;
+    padding-right: 70px;
 }
 
 .rounded-chart-left{
@@ -31,7 +31,7 @@
   z-index: 10;
 }
 .content-container{
-height: var(--carousel-height);
+  height: var(--carousel-height);
   max-width: 100%;
   margin: auto;
   background-color: #fff;

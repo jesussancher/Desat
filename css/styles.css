@@ -139,6 +139,10 @@ a{
                 display:none;
             }
 
+            .back-carousel{
+                display:none;
+            }
+
             /* Header */
 
             .head{
@@ -192,6 +196,10 @@ a{
                 height:400px;
             }
 
+            .back-carousel{
+                display:none;
+            }
+
         }
 
         /* Medium Devices */
@@ -226,6 +234,10 @@ a{
 
             .head{
                 height:400px;
+            }
+
+            .back-carousel{
+                display:none;
             }
         }
 
