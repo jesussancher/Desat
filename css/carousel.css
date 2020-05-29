@@ -1,0 +1,137 @@
+.back-carousel{
+    height: calc(var(--carousel-height)*1.5);
+    background-color: var(--primary-green);
+}
+
+.carousel{
+    padding-left: 100px;
+    z-index: 10;
+}
+.content{
+    padding-right: 100px;
+}
+
+
+:root{
+    --carousel-height:445px;
+}
+
+.rounded-chart-left{
+    border-radius:10px 0px 0px 10px;
+}
+.rounded-chart-right{
+    border-radius:0px 10px 10px 0px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: var(--carousel-height);
+  max-width: 100%;
+  margin: auto;
+  z-index: 10;
+}
+.content-container{
+height: var(--carousel-height);
+  max-width: 100%;
+  margin: auto;
+  background-color: #fff;
+  z-index: 9;
+}
+
+/* Title */
+.title-container{
+    padding: 100px 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.carousel-img{
+    height: var(--carousel-height);
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:var(--primary-green);
+  color:#fff;
+}
+
+/* Caption text */
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-left:60px;
+    margin-right:60px;
+    bottom:200px;
+    padding: 20px 28px;
+    height: 80px;
+    background-color: rgba(153, 204, 051, 0.6);
+    bottom:20px;
+    border-radius:10px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 55px;
+  width: 55px;
+  margin: 0 3px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+.icon{
+    
+}
+
+.active, .dot:hover {
+  background-color:var(--primary-green);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.1}
+  to {opacity: 1}
+}
+
+

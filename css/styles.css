@@ -5,6 +5,10 @@
     padding:0;
   }
 
+:root{
+    --primary-green:#99cc33;
+    --secondary-green:#339933;
+}
 /* Navigation */
 nav li{
     display:inline-block;
@@ -24,7 +28,12 @@ a{
         background-color: #fff;
         z-index: 15;
         }
-
+    
+    .top-nav-opacity{
+        background-color: rgba(255,255,255,0.5);
+        height: 85px;
+        transition: background-color 1s ease-in-out, height 0.3s ease-in-out;
+    }
     .bars{
         cursor: pointer;
         border-radius: 5px;
@@ -34,11 +43,10 @@ a{
         width: 0px;
         height:0;
         overflow: hidden;
-        float: right;
         background-color: #fff;            
-        margin-top: -80px;
         border-radius: 10px 0px 10px 10px;
         z-index: 20;
+        right: 0;
     }
     
     #x{
@@ -48,14 +56,14 @@ a{
     
     #certi{
         width: 100%;
-        background-color: #99cc33;
+        background-color: var(--primary-green);
         color:#fff;
-        font-size:18px;
+        font-size:16px;
         font-weight: 400;
         cursor: pointer;
         padding-top:16px;
         padding-bottom:28px;
-        margin-top:30px;
+        margin-top:35px;
     }
 
     .navport ul{
@@ -71,25 +79,49 @@ a{
         width:100%;
     }
 
-    .navport ul li a{
+    nav ul li a{
         color: #738678;
-        font-size:16px;
+        font-size:14px;
         padding:10px 40px;
-        display: block;
         margin:0;
+        transition: color 500ms ease-in-out;
     }
 
-    .navport ul li a:hover{
-        color: #99cc33;
+    nav ul li a:hover{
+        color: var(--primary-green);
     }
     
-    .navport ul li a:active{
-        color: #99cc33;
+    nav ul li a:active{
+        color: var(--primary-green);
     }
+
+    #certificado{
+        display: inline-block;
+        background-color: var(--primary-green);
+        color:#fff;
+        font-size:14px;
+        font-weight: 400;
+    }
+
+/* Header */
+
+.head{
+    background-image: url(/assets/img/Media/Desat_Background.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 625px;
+    z-index: 1;
+}
+
+.cuerpo{
+    background-color: var(--primary-green);
+    height: 1000px;
+}
 
         /* Small Devices */
         @media only screen and (max-width: 575.98px) {
- 
+            /* Navigation */ 
             .col-sm-2{
                 width:16.66%;
             }
@@ -99,12 +131,72 @@ a{
             .navland{
                 display:none;
             }
+            .navport ul li a{
+                display: block;
+            }
+
+            #certificado{
+                display:none;
+            }
+
+            /* Header */
+
+            .head{
+                height:400px;
+            }
+
 
         }
 
-        /* Small Landscape Devices */
+        /* Small Devices Landscape */ 
         @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+            /* Navigation */ 
+            .col-mdl-2{
+                width:16.66%;
+            }
+            .col-mdl-10{
+                width:83.33%;
+            }
 
+            .bars{
+                display: none;
+            }
+            #navbox{
+                display:none;
+            }
+            
+            #certificado{
+                margin-left:-1px;
+            }
+
+            div nav ul li{
+                text-align: left;
+                display:inline-block;
+            }
+
+            div nav ul li a{
+                color: #738678;
+                font-size:14px;
+                padding:10px 0px;
+                margin:0;
+            }
+
+            .tooltip .tooltiptext {
+                left: 0%;
+                margin-left: -20px;
+            }    
+            
+            /* Header */
+
+            .head{
+                height:400px;
+            }
+
+        }
+
+        /* Medium Devices */
+        @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+            /* Navigation */ 
             .col-md-2{
                 width:16.66%;
             }
@@ -123,47 +215,69 @@ a{
                 display:inline-block;
             }
 
-            div nav li a{
+            div nav ul li a{
                 color: #738678;
-                font-size:16px;
+                font-size:14px;
+                padding:10px 0px;
+                margin:0;
+            }
+
+            /* Header */
+
+            .head{
+                height:400px;
+            }
+        }
+
+        /* Large Devices */
+        @media only screen and (min-width: 992px) {
+            /* Navigation */ 
+            .col-lg-3{
+                width:25%;
+            }
+            .col-lg-9{
+                width:75%;
+            }
+            .col-lg-4{
+                width: 33.33%;
+            }
+            .col-lg-6{
+                width: 50%;
+            }
+            .bars{
+                display: none;
+            }
+            #navbox{
+                display:none;
+            }
+            div nav ul li{
+                text-align: left;
+                display:inline-block;
+            }
+
+            div nav ul li a{
+                color: #738678;
+                font-size:14px;
+                padding:10px 0px;
                 margin:0;
             }
         
-            div nav li a:hover{
-                color: #99cc33;
-            }
-            
-            div nav li a:active{
-                color: #99cc33;
-            }
-
-            #certificado{
-                display: flex;
-                background-color: #99cc33;
-                color:#fff;
-                font-size:16px;
-                font-weight: 400;
-            }
-
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 991.98px) {
 
-            .col-lg-2{
-                width:16.66%;
-            }
-            .col-lg-10{
-                width:83.33%;
-            }
-
-        }
 
 /* Lettering */
+h2{
+    font-size: 40px;
+    color:var(--primary-green);
+} 
 h3{
     font-size:20px;
-    color:#99cc33;
+    color:var(--primary-green);
 } 
-
+.white{
+    color:#fff;
+}
 
 /* Helpers */
 .text-center{
@@ -189,14 +303,68 @@ h3{
 .relative{
     position: relative;
 }
+.fixed{
+    position: fixed;
+}
 .shadow {
-    -webkit-box-shadow: 3px 8px 12px 4px rgba(244,244,244,0.5);
-    -moz-box-shadow:    3px 8px 12px 4px rgba(244,244,244,0.5);
-    box-shadow:         3px 8px 12px 4px rgba(244,244,244,0.5);
+    -webkit-box-shadow: 3px 8px 12px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow:    3px 8px 12px 4px rgba(0,0,0,0.05);
+    box-shadow:         3px 8px 12px 4px rgba(0,0,0,0.05);
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
 }
 
-/* Elements */
 
+/* Elements */
+    .btn{
+        padding:10px 20px;
+        border-radius: 5px;
+    }
+
+    /* Tooltip */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    .tooltip .tooltiptext {
+        width: 120px;
+        background-color: var(--secondary-green);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 5px;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 58%;
+        margin-left: -60px;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color:  transparent transparent #339933 transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        opacity: 1;
+      }
+
+      .tooltip:active .tooltiptext {
+        opacity: 1;
+      }     
 
     /* Flex */
     .row{
@@ -230,18 +398,30 @@ h3{
     .pb-20{
         padding-bottom:20px;
     }
+    .pr-20{
+        padding-right:20px;
+    }
+    .pl-20{
+        padding-left:20px;
+    }
 
     /* Margins */
 
     .mt-30{
         margin-top:30px;
     }
+    .mb-30{
+        margin-bottom:30px;
+    }
     .ml-30{ 
        margin-left:30px;
     }
     .mr-30{ 
         margin-right:30px;
-     }
+    }
+    .ml-20{ 
+       margin-left:20px;
+    }
 
      /* debug  */
     .border{

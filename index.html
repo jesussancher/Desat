@@ -11,36 +11,43 @@
     <meta name="keywords" content="Salud y seguridad laboral, medicina ocupacional, salud ocupacional, ips ocupacional, Neiva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/d18fb30653.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">  
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+
 </head>
 
 <body>
 
     <header>
        <!-- Mobile Nav Bar -->
-        <div class="top-nav shadow row">
-          <div class="col-sm-10 col-md-2 col-lg-10 ml-30">
-              <a href="#"><img src="assets/img/Desat_logo.png" alt="DESAT" width="80px"></a>
+        <div id="navbar" class="top-nav shadow row w-100 fixed">
+          <div class="col-sm-10 col-md-2 col-mdl-2 col-lg-3 ml-30">
+              <a href="index.html"><img src="assets/img/Desat_logo.png" alt="DESAT" width="80px"></a>
           </div>
-          <div class="col-sm-2 col-md-10 col-lg-2 mr-30 right">
+          <div class="col-sm-2 col-md-10 col-mdl-10 col-lg-9 mr-30 right">
             <div id="burger" class="bars">
               <img src="assets/icons/bars.png" height="16px" width="16px">
             </div>
             <!-- Landscape Nav -->
               <nav class="navland">
                 <ul>
-                  <li><a href="#"><i class="fas fa-home p-10"></i>Inicio</a></li>
+                  <li><a href="index.html"><i class="fas fa-home p-10"></i>Inicio</a></li>
                   <li><a href="#"><i class="fas fa-user p-10"></i>Nosotros</a></li>
                   <li><a href="#"><i class="fas fa-th p-10"></i>Servicios</a></li>
                   <li><a href="#"><i class="fas fa-envelope p-10"></i>Contacto</a></li>
+                  <div class="tooltip">
+                    <a id="certificado" class="btn ml-20" href="http://desatneiva.rednacional.com.co/" target="_blank" alt="SOFIA">Certificado</a>
+                    <span class="tooltiptext shadow p-10">Certifícate con <b>SOFIA</b></span>
+                  </div>
                 </ul>
               </nav>
+
           </div>
 
         </div>
         <!-- Burguer Nav -->
-        <div id="navbox" class="nav-container relative shadow">
+        <div id="navbox" class="nav-container fixed shadow">
           <div id="x" class="bars absolute">
             <img src="assets/icons/x.png" height="16px" width="16px">
           </div>
@@ -52,15 +59,91 @@
               <li><a href="#"><i class="fas fa-th p-10"></i>Servicios</a></li>
               <li><a href="#"><i class="fas fa-envelope p-10"></i>Contacto</a></li>
             </ul>
-            <a href="http://desatneiva.rednacional.com.co/" target="_blank" alt="SOFIA"><div id="certi" class="text-center"><div>Certificado en Línea</div></div></a>
+            <a href="http://desatneiva.rednacional.com.co/" target="_blank" alt="SOFIA"><div id="certi" class="text-center"><div>Certificado</div></div></a>
           </nav>
         </div>
-
     </header>
 
-  </body>
+    <div class="head w-100">
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </div>
+    <!-- COVID-19 Start -->
+    <div class="back-carousel">
+      <div class="carousel content relative mb-30 row w-100">
+
+        <div class="slideshow-container rounded-chart-left relative col-lg-6 shadow">
+
+          <div class="mySlides fade">
+              <img src="assets/img/Covid/1.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+              <div class="text w-100 absolute">Hemos intensificado nuestros controles para <b>protegerte</b> y protegernos </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/2.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute">Conforme al <b>Ministerio de Salud</b></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/3.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute">Nuestro compromiso es <b>0</b> contagios</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/4.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute">Lavado correcto de <b>manos</b></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/5.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute"><b>Desinfección</b> de suela de zapatos</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/6.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute"><b>Módulo de desinfección</b> de ingreso de personal</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="assets/img/Covid/7.jpg" class="absolute rounded-chart-left carousel-img" style="width:100%">
+            <div class="text w-100 absolute">Yo me cuido, <b>yo te cuido</b></div>
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          
+          </div>
+          <div class="content-container relative col-lg-6 rounded-chart-right relative shadow">
+              <div class="title-container">
+                <h2 style="font-weight:400"> La vida es nuestra prioridad<br><b>Cumplimos con los protocolos de bioseguridad</b></h2>
+                               
+
+                <div class="ml-20" style="text-align:center">
+                  <span class="dot shadow" onclick="currentSlide(1)"></span> 
+                  <span class="dot shadow" onclick="currentSlide(2)"></span> 
+                  <span class="dot shadow" onclick="currentSlide(3)"></span> 
+                  <span class="dot shadow" onclick="currentSlide(4)"></span> 
+                  <span class="dot shadow" onclick="currentSlide(5)"></span> 
+                  <span class="dot shadow" onclick="currentSlide(6)"></span>
+                  <span class="dot shadow" onclick="currentSlide(7)"></span> 
+                </div>
+
+              </div>
+              
+          
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+          </div>
+    </div>
+        <!-- COVID-19 End -->
+
+  </body>
+    <script src="https://kit.fontawesome.com/d18fb30653.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/package/jquery-1.7.2.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/carousel.js"></script>
+
 </html>
 

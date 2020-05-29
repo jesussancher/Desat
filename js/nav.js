@@ -71,3 +71,13 @@ $("header nav ul li a").on("click",function(){
 
 });
 });
+
+window.onscroll = function() {naviOpacity()};
+
+function naviOpacity() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").classList.add("top-nav-opacity");
+  } else {
+    document.getElementById("navbar").classList.remove("top-nav-opacity");
+  }
+}
