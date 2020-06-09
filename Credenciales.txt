@@ -1,0 +1,5 @@
+https://shared10.hostgator.co:2083/logout/?locale=es_419
+Usuario: desatco
+    contraseña: pySRj7431a
+
+FTP: 108.167.149.241

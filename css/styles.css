@@ -110,9 +110,16 @@ a{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 625px;
+    top:80px;
+    height: 100vh;
     z-index: 1;
 }
+.logoContainer{
+    width: 70%;
+    top:30%;
+    left:15%;
+}
+
 
 .cuerpo{
     background-color: var(--primary-green);
@@ -120,7 +127,7 @@ a{
 }
 
         /* Small Devices */
-        @media only screen and (max-width: 575.98px) {
+        @media (max-width: 575.98px) {
             /* Navigation */ 
             .col-sm-2{
                 width:16.66%;
@@ -139,16 +146,58 @@ a{
                 display:none;
             }
 
-            .back-carousel{
-                display:none;
-            }
-
             /* Header */
 
             .head{
                 height:400px;
             }
 
+            /* Carousel */
+            .back-carousel{
+                top:80px;
+                height: auto !important;
+            }
+            #next{
+                display:none;
+            }
+            #carousel.row{
+                flex-direction: column;
+            }
+            #carousel{
+                padding-left: 20px !important; 
+                padding-right: 20px !important; 
+                padding-top:50px !important;
+            }
+            .rounded-chart-left{
+                border-radius:10px 10px 0px 0px !important;
+            }
+            .rounded-chart-right{
+                border-radius:0px 0px 10px 10px !important;
+            }
+            .text{
+                margin-left: 0px !important;
+                bottom:0px !important;
+                border-radius: 0px !important;
+            }
+            .content-container{
+                height: auto!important;
+                margin-bottom:40px !important;
+            }
+            .title-container{
+                display: none;
+            }
+            h2{
+                margin-top:50px;
+            }
+            .dot-container{
+                top:10px;
+                left:0%;
+                margin: 10px 1% !important;
+            }
+            .dot{
+                height: 50px !important;
+                width: 50px !important;
+            }
 
         }
 
@@ -195,9 +244,59 @@ a{
             .head{
                 height:400px;
             }
-
-            .back-carousel{
+            .logoContainer{
+                width: 60% !important;
+                left:20% !important;
+            }
+            h3 br{
                 display:none;
+            }
+
+            /* Carousel */
+            .back-carousel{
+                top:80px;
+                height: auto !important;
+            }
+            #next{
+                display:none;
+            }
+            #carousel.row{
+                flex-direction: column;
+            }
+            #carousel{
+                padding-left: 20px !important; 
+                padding-right: 20px !important; 
+                padding-top:50px !important;
+            }
+            .rounded-chart-left{
+                border-radius:10px 10px 0px 0px !important;
+            }
+            .rounded-chart-right{
+                border-radius:0px 0px 10px 10px !important;
+            }
+            .text{
+                margin-left: 0px !important;
+                bottom:0px !important;
+                border-radius: 0px !important;
+            }
+            .content-container{
+                height: auto!important;
+                margin-bottom:40px !important;
+            }
+            .title-container{
+                display: none;
+            }
+            h2{
+                margin-top:50px;
+            }
+            .dot-container{
+                top:10px;
+                left:0%;
+                margin: 10px 5% !important;
+            }
+            .dot{
+                height: 60px !important;
+                width: 60px !important;
             }
 
         }
@@ -215,6 +314,9 @@ a{
                 display: none;
             }
             #navbox{
+                display:none;
+            }
+            #next{
                 display:none;
             }
 
@@ -235,9 +337,59 @@ a{
             .head{
                 height:400px;
             }
-
-            .back-carousel{
+            .logoContainer{
+                width: 50% !important;
+                left:25% !important;
+            }
+            h3 br{
                 display:none;
+            }
+
+            /* Carousel */
+            .back-carousel{
+                top:80px;
+                height: auto !important;
+            }
+            #next{
+                display:none;
+            }
+            #carousel.row{
+                flex-direction: column;
+            }
+            #carousel{
+                padding-left: 20px !important; 
+                padding-right: 20px !important; 
+                padding-top:50px !important;
+            }
+            .rounded-chart-left{
+                border-radius:10px 10px 0px 0px !important;
+            }
+            .rounded-chart-right{
+                border-radius:0px 0px 10px 10px !important;
+            }
+            .text{
+                margin-left: 0px !important;
+                bottom:0px !important;
+                border-radius: 0px !important;
+            }
+            .content-container{
+                height: auto!important;
+                margin-bottom:40px !important;
+            }
+            .title-container{
+                display: none;
+            }
+            h2{
+                margin-top:50px;
+            }
+            .dot-container{
+                top:10px;
+                left:0%;
+                margin: 10px 5% !important;
+            }
+            .dot{
+                height: 60px !important;
+                width: 60px !important;
             }
         }
 
@@ -273,6 +425,18 @@ a{
                 padding:10px 0px;
                 margin:0;
             }
+
+            .logoContainer{
+                width: 50% !important;
+                left:25% !important;
+            }
+            h3 br{
+                display:none;
+            }
+
+            .back-carousel{
+                top:80px;
+            }
         
         }
 
@@ -287,6 +451,10 @@ h3{
     font-size:20px;
     color:var(--primary-green);
 } 
+h5{
+    font-size:14px;
+    font-weight: 100;
+}
 .white{
     color:#fff;
 }

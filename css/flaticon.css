@@ -22,6 +22,15 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after { 
+  top:10px !important;
+  right:10px !important;
+  font-size: 28px !important;
+  }
+}
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
@@ -32,7 +41,11 @@ position:absolute;
 top:15px;
 right:15px;
 color: var(--primary-green);
+
+
 }
+
+
 
 .flaticon-medical:before { content: "\f100"; }
 .flaticon-documents:before { content: "\f101"; }

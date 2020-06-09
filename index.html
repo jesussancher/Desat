@@ -64,12 +64,22 @@
         </div>
     </header>
 
-    <div class="head w-100">
-
+    <div class="head w-100 relative">
+      <div class="logoContainer absolute">
+          <img class="logo w-100" src="assets/img/Desat_logo.png"><br></br>
+          <h3 style="font-weight: 400;" class="text-center">Tu mejor aliado en
+            <br>
+            <span style="font-weight: 700;"
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "seguridad", "salud"]'></span>
+               <br>    
+          </h3>
+      </div>
     </div>
     <!-- COVID-19 Start -->
-    <div class="back-carousel">
-      <div class="carousel content relative mb-30 row w-100">
+    <div class="back-carousel relative">
+      <div id="carousel" class="content relative mb-30 row w-100">
 
         <div class="slideshow-container rounded-chart-left relative col-lg-6 shadow">
 
@@ -109,26 +119,27 @@
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a id="nextMob"class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          <div class="content-container relative col-lg-6 rounded-chart-right relative shadow">
+          <div class="content-container col-lg-6 rounded-chart-right shadow">
               <div class="title-container">
+                
                 <h2 style="font-weight:400; color:#355e3b"> La vida es nuestra prioridad<br></h2>
                 <h2><b>Cumplimos con los protocolos de bioseguridad</b></h2>        
-                <div class="dot-container text-center">
-                  
-                  <span class="dot relative shadow" onclick="currentSlide(1)"><i class="flaticon-prevention color-white"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(2)"><i class="flaticon-documents"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(3)"><i class="flaticon-affection"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(4)"><i class="flaticon-washing-hands"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(5)"><i class="flaticon-footprints"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(6)"><i class="flaticon-handwash"></i></span> 
-                  <span class="dot relative shadow" onclick="currentSlide(7)"><i class="flaticon-medical"></i></span> 
-
-                </div>
+          
               </div>
-              
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+              <div class="dot-container text-center">
+                  
+                <span class="dot relative shadow" onclick="currentSlide(1)"><i class="flaticon-prevention color-white"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(2)"><i class="flaticon-documents"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(3)"><i class="flaticon-affection"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(4)"><i class="flaticon-washing-hands"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(5)"><i class="flaticon-footprints"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(6)"><i class="flaticon-handwash"></i></span> 
+                <span class="dot relative shadow" onclick="currentSlide(7)"><i class="flaticon-medical"></i></span> 
+                
+              </div>
+              <a id="next" class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           </div>
     </div>
@@ -139,6 +150,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/typing.js"></script>
 
 </html>
 

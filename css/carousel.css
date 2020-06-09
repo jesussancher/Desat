@@ -7,14 +7,14 @@
     background-color: var(--primary-green);
 }
 
-.carousel{
+#carousel{
     padding-left: 70px;
     padding-top: 120px;
     z-index: 10;
-}
-.content{
     padding-right: 70px;
+
 }
+
 
 .rounded-chart-left{
     border-radius:10px 0px 0px 10px;
@@ -77,7 +77,7 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .prev:active, .next:active {
   background-color:var(--primary-green);
   color:#fff;
 }
@@ -91,7 +91,6 @@
     margin-right:60px;
     bottom:200px;
     padding: 20px 28px;
-    height: 80px;
     background-color: rgba(153, 204, 051, 0.6);
     bottom:20px;
     border-radius:10px;
@@ -101,7 +100,7 @@
 /* The dots/bullets/indicators */
 .dot-container{
     margin-top: 30px;
-    margin-left: -30px;
+    margin-left: 0px;
 }
 .dot {
   cursor: pointer;
