@@ -8,6 +8,7 @@
 :root{
     --primary-green:#99cc33;
     --secondary-green:#339933;
+    --dark-green: #355e3b;
 }
 /* Navigation */
 nav li{
@@ -106,7 +107,7 @@ a{
 /* Header */
 
 .head{
-    background-image: url(/assets/img/Media/Desat_Background.png);
+    /* background-image: url(/assets/img/Media/Desat_Background.png); */
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,7 +117,7 @@ a{
 }
 .logoContainer{
     width: 70%;
-    top:30%;
+    top:10%;
     left:15%;
 }
 
@@ -427,8 +428,8 @@ a{
             }
 
             .logoContainer{
-                width: 50% !important;
-                left:25% !important;
+                width: 30% !important;
+                left:35% !important;
             }
             h3 br{
                 display:none;
@@ -503,6 +504,10 @@ h5{
     .btn{
         padding:10px 20px;
         border-radius: 5px;
+    }
+
+    .bg-dark-green{
+        background-color: var(--dark-green);
     }
 
     /* Tooltip */
