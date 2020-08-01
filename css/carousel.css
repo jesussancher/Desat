@@ -19,6 +19,14 @@
   font-size: 50px;
 }
 
+.carousel-title2-container{
+  text-align: right;
+  bottom: 100px;
+  z-index: 30;
+  right: 18%;
+  font-size: 80px;
+}
+
 .btn-servicios{
   font-size: 27px;
   border-radius: 10px;

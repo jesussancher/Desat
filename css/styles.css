@@ -409,6 +409,15 @@ a{
             .col-lg-6{
                 width: 50%;
             }
+            .col-lg-5{
+                width: calc(5/12*100%);
+            }
+            .col-lg-7{
+                width: calc(7/12*100%);
+            }
+            .col-lg-8{
+                width: calc(8/12*100%);
+            }
             .bars{
                 display: none;
             }
@@ -456,7 +465,10 @@ h5{
     font-size:14px;
     font-weight: 100;
 }
-.white{
+p{
+    font-size:20px;
+    color: #738678
+}.white{
     color:#fff;
 }
 
@@ -560,6 +572,7 @@ h5{
     .col-3 {
         width: 25%;
     }
+    
     .col-6 {
         width: 50%;
     }

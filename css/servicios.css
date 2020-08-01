@@ -1,0 +1,92 @@
+.serv-description{
+    top: -200px;
+}
+
+.serv{
+    top: -100px;
+}
+.serv-description{
+    padding-top: 30px;
+    padding-right: 15%;
+}
+#servicios{
+    padding: 0% 150px;
+}
+
+.grid{
+    display: grid;
+}
+
+.serv-chart-2{
+    grid-template-rows: auto 60px 30px;
+}
+.serv-chart-1{
+    grid-template-rows: 30px auto 60px;
+}
+.thumbnail{
+    border-radius: 25px;
+    height: 260px;
+    width: 100%;
+}
+.thumbnail-desc{
+    padding: 5px 3px;
+}
+.serv-thumbs{
+    grid-template-rows: auto 0px auto;
+}
+
+.serv-thumbs-col-1{
+    grid-template-columns: auto 280px auto 280px;
+}
+.serv-thumbs-col-2{
+    grid-template-columns: 280px auto 280px auto;
+}
+
+.thumbs-right{
+    padding: 30px;
+}
+
+/* Imagenes */
+.med-oc{
+    background-image: url(/assets/img/Media/Desat_medicina_ocupacional.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.psico{
+    background-image: url(/assets/img/Media/Psicologia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.espiro{
+    background-image: url(/assets/img/Media/Espirometria.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fono{
+    background-image: url(/assets/img/Media/Desat_audiologia_y_terapia_lenguaje.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cover-white{
+    background-color: rgba(255,255,255,0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.cover-green{
+    background-color: rgba(153,204,51,0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
