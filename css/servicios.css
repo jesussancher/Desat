@@ -29,7 +29,7 @@
     width: 100%;
 }
 .thumbnail-desc{
-    padding: 5px 3px;
+    padding: 15px 3px;
 }
 .serv-thumbs{
     grid-template-rows: auto 0px auto;
@@ -75,6 +75,33 @@
     background-size: cover;
 }
 
+.opto-vis{
+    background-image: url(/assets/img/Media/Optometria_y_visiometria.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lab-clin{
+    background-image: url(/assets/img/Media/Laboratorio_clinico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-inv{
+    background-image: url(/assets/img/Media/Desat_capacitacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ex-esc{
+    background-image: url(/assets/img/Media/Desat_examen_medico_escolar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .cover-white{
     background-color: rgba(255,255,255,0.6);
     top: 0;
